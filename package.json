@@ -1,5 +1,5 @@
 {
-  "name": "naveenda.github.io",
+  "name": "leojavier.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NaveenDA/naveenda.github.io.git"
+    "url": "git+https://github.com/leojavier/leojavier.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NaveenDA/naveenda.github.io/issues"
+    "url": "https://github.com/leojavier/leojavier.github.io/issues"
   },
-  "homepage": "https://github.com/NaveenDA/naveenda.github.io#readme",
+  "homepage": "https://github.com/leojavier/leojavier.github.io#readme",
   "dependencies": {
   }
 }
