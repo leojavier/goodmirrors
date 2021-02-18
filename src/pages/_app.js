@@ -1,5 +1,11 @@
 import {useEffect} from "react";
 import Header from "../components/header";
+import Banner from "../components/banner";
+import Opportunity from "../components/opportunity";
+import Criteria from "../components/criteria";
+import Deadline from "../components/deadline";
+import Social from "../components/social";
+import Footer from "../components/footer";
 import { ThemeProvider } from "../components/providers";
 import '../assets/styles/index.css'
 
@@ -13,7 +19,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider>
       <Header />
-      <section style={{height:'100ch'}}>t</section>
+      <Banner />
+      <Opportunity />
+      <Criteria />
+      <Deadline />
+      <Social />
+      <Footer />
       <Component {...pageProps} />
     </ThemeProvider>
   );
