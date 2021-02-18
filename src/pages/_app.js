@@ -7,7 +7,7 @@ import Deadline from "../components/deadline";
 import Social from "../components/social";
 import Footer from "../components/footer";
 import { ThemeProvider } from "../components/providers";
-// import '../assets/styles/index.css'
+import '../assets/styles/index.css'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

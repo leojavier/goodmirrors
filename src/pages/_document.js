@@ -22,7 +22,7 @@ class MyDocument extends Document {
             name="google-site-verification"
             content="8CYV4Oyz865mIuy-fi8ERPZBOxhznQKaKWCn9CDcgPE"
           />
-                  <link rel="stylesheet" href="/index.css"/>
+                  {/* <link rel="stylesheet" href="/index.css"/> */}
         </Head>
         <body>
           <script src="noflash.js" />
