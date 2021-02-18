@@ -9,30 +9,12 @@ const Header = (props) => {
 
 
   return (
-    <>
-      <header>
-        <div className="logo">
-        <Link href="/"><img src="/naveenda-logo.svg" /></Link>
-        </div>
-        <ul className="links">
-          <li className={router.pathname == "/" ? "active" : ""}>
-            <Link href="/">Portfolio</Link>
-          </li>
-          <li className={router.pathname == "/photography" ? "active" : ""}>
-            <Link href="/photography">Photography</Link>
-          </li>
-          <li>
-            <Link href="/">Drawing</Link>
-          </li>
-          <li>
-            <Link href="https://twitter.com/NaveenDA_">Contact Me</Link>
-          </li>
-          <li>
-            <ToggleTheme />
-          </li>
-        </ul>
-      </header>
-    </>
+    <section className="container header">
+      <img className="header__grant__woman" src="images/Grant_girls_1.png" alt=""/>
+      <h1> The Emerging Visionary Grant </h1>
+      <a className='button' href="#0">Apply Now!</a>
+    </section>
+    
   );
 };
 export default Header;

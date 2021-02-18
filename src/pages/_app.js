@@ -1,8 +1,7 @@
 import {useEffect} from "react";
-
 import Header from "../components/header";
 import { ThemeProvider } from "../components/providers";
-import "../styles.css";
+import '../assets/styles/index.css'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -14,6 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider>
       <Header />
+      <section style={{height:'100ch'}}>t</section>
       <Component {...pageProps} />
     </ThemeProvider>
   );

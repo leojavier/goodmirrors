@@ -1,0 +1,37 @@
+$sunshine: #feebd6;
+$brown: #34251f;
+
+body {
+  background: $sunshine !important;
+}
+
+h1 {
+  font-family: "Adamina", serif;
+}
+
+.header {
+  height: 100vh;
+  background: url("../../public/images/head_icons.png");
+  background-position: top center;
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  h1 {
+    font-size: 64px;
+    max-width: 500px;
+    margin: 76px auto;
+  }
+}
+
+.header__grant__woman {
+  margin: auto;
+  max-width: 800px;
+}
+
+.button {
+  background-color: $brown;
+  color: $sunshine;
+  padding: 11px 77px;
+  font-family: "Orienta", sans-serif;
+}
