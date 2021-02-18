@@ -1,12 +1,16 @@
+$sunshine: #feebd6;
+$brown: #34251f;
+$light_brown: #a94c20;
+
 /*******************************
 ********************************
 Global Styles
 ********************************
 ********************************/
 body {
-  background: #feebd6 !important;
+  background: $sunshine !important;
   font-family: "Orienta", sans-serif;
-  -webkit-font-smoothing: antialiased;
+  // -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -21,20 +25,18 @@ h3 {
 }
 
 .button {
-  background-color: #34251f;
+  background-color: $brown;
   display: inline-block;
-  color: #feebd6;
-  border: thin solid #34251f;
+  color: $sunshine;
+  border: thin solid $brown;
   padding: 11px 77px;
   font-family: "Orienta", sans-serif;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.button:hover {
-  background-color: #feebd6;
-  color: #34251f;
-  text-decoration: none;
+  &:hover {
+    background-color: $sunshine;
+    color: $brown;
+    text-decoration: none;
+  }
 }
 
 /*******************************
@@ -50,12 +52,11 @@ Header Styles
   background-size: contain;
   background-repeat: no-repeat;
   text-align: center;
-}
-
-.header h1 {
-  font-size: 64px;
-  max-width: 500px;
-  margin: 76px auto;
+  h1 {
+    font-size: 64px;
+    max-width: 500px;
+    margin: 76px auto;
+  }
 }
 
 .header__grant__woman {
@@ -65,71 +66,67 @@ Header Styles
 }
 
 @media (max-width: 768px) {
-  .header h1 {
-    font-size: 34px !important;
-    line-height: 48px;
-    margin: 36px auto;
+  .header {
+    h1 {
+      font-size: 34px !important;
+      line-height: 48px;
+      margin: 36px auto;
+    }
   }
   .header__grant__woman {
     margin-top: 25px;
   }
 }
-
 /*******************************
 ********************************
 Header Styles
 ********************************
 ********************************/
 .banner {
-  background-color: #34251f;
-  color: #feebd6;
+  background-color: $brown;
+  color: $sunshine;
   text-align: center;
   padding: 90px 20px;
-}
-
-.banner .container {
-  background: url("https://leojavier.github.io/goodmirrors/images/banner_bg.png");
-  background-position: top center;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-}
-
-.banner h2 {
-  font-size: 48px;
-  max-width: 700px;
-  line-height: 65px;
-  font-weight: 100;
-  margin: auto;
-}
-
-.banner P {
-  max-width: 750px;
-  font-size: 30px;
-  line-height: 36px;
-  margin: 30px auto;
-  font-weight: 100;
-}
-
-@media (max-width: 768px) {
-  .banner {
-    padding: 70px 20px 40px;
+  .container {
+    background: url("https://leojavier.github.io/goodmirrors/images/banner_bg.png");
+    background-position: top center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
   }
-  .banner h2 {
-    font-size: 20px;
+  h2 {
+    font-size: 48px;
     max-width: 700px;
-    line-height: 32px;
+    line-height: 65px;
     font-weight: 100;
     margin: auto;
   }
-  .banner P {
+  P {
     max-width: 750px;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 20px auto;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 30px auto;
     font-weight: 100;
   }
 }
-
+@media (max-width: 768px) {
+  .banner {
+    padding: 70px 20px 40px;
+    h2 {
+      font-size: 20px;
+      max-width: 700px;
+      line-height: 32px;
+      font-weight: 100;
+      margin: auto;
+    }
+    P {
+      max-width: 750px;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 20px auto;
+      font-weight: 100;
+    }
+  }
+}
 /*******************************
 ********************************
 Opportunity Styles
@@ -143,15 +140,13 @@ Opportunity Styles
   background-position: top center;
   background-attachment: scroll;
   background-repeat: repeat-x;
-  color: #feebd6;
+  color: $sunshine;
+  h3 {
+    margin: auto;
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
-
-.opportunity h3 {
-  margin: auto;
-  font-size: 40px;
-  line-height: 48px;
-}
-
 @media (max-width: 768px) {
   .opportunity {
     padding-top: 63px;
@@ -163,14 +158,13 @@ Opportunity Styles
     background-attachment: scroll;
     background-repeat: repeat;
     background-size: contain;
-  }
-  .opportunity h3 {
-    margin: auto;
-    font-size: 20px;
-    line-height: 28px;
+    h3 {
+      margin: auto;
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
 }
-
 /*******************************
 ********************************
 Criteria Styles
@@ -179,33 +173,28 @@ Criteria Styles
 .criteria {
   text-align: center;
   padding: 98px 20px 57px;
+  img {
+    width: 100%;
+    max-width: 500px;
+  }
+  li {
+    font-size: 25px;
+    line-height: 33px;
+    max-width: 500px;
+    margin: auto;
+    list-style: none;
+  }
+  small {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+  }
+  .button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
-
-.criteria img {
-  width: 100%;
-  max-width: 500px;
-}
-
-.criteria li {
-  font-size: 25px;
-  line-height: 33px;
-  max-width: 500px;
-  margin: auto;
-  list-style: none;
-}
-
-.criteria small {
-  max-width: 400px;
-  margin: auto;
-  margin-top: 30px;
-  display: block;
-}
-
-.criteria .button {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
   img {
     width: 100%;
@@ -213,70 +202,65 @@ Criteria Styles
     margin-bottom: 40px;
   }
 }
-
 @media (max-width: 768px) {
   .criteria {
     text-align: center;
     padding: 0;
-  }
-  .criteria .row {
-    width: 100%;
-    padding: 20px;
-  }
-  .criteria div {
-    margin: 0;
-    padding: 0;
-  }
-  .criteria img {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 40px;
-  }
-  .criteria ul {
-    padding: 0;
-  }
-  .criteria li {
-    font-size: 20px;
-    line-height: 30px;
-    max-width: 500px;
-    margin: auto;
-    list-style: none;
+    .row {
+      width: 100%;
+      padding: 20px;
+    }
+    div {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 500px;
+      margin: auto;
+      list-style: none;
+    }
   }
   .criteria__art {
     display: none;
   }
 }
-
 /*******************************
 ********************************
 Deadline Styles
 ********************************
 ********************************/
 .deadline {
-  background: #a94c20;
-  color: #feebd6;
+  background: $light_brown;
+  color: $sunshine;
   text-align: center;
   width: 100%;
   padding: 65px 20px;
+  h3 {
+    font-size: 40px;
+  }
 }
-
-.deadline h3 {
-  font-size: 40px;
-}
-
 @media (max-width: 768px) {
   .deadline {
-    background: #a94c20;
-    color: #feebd6;
+    background: $light_brown;
+    color: $sunshine;
     text-align: center;
     padding: 35px 10px;
-  }
-  .deadline h3 {
-    font-size: 20px;
-    line-height: 32px;
+    h3 {
+      font-size: 20px;
+      line-height: 32px;
+    }
   }
 }
-
 /*******************************
 ********************************
 Social Styles
@@ -284,48 +268,42 @@ Social Styles
 ********************************/
 .social {
   font-family: "Adamina", serif;
-  background-color: #34251f;
-  color: #feebd6;
+  background-color: $brown;
+  color: $sunshine;
   text-align: center;
   padding: 90px 20px;
-}
-
-.social img {
-  margin-top: 12px;
-}
-
-.social h2 {
-  font-size: 30px;
-  line-height: 41px;
-  margin-top: 115px;
-}
-
-.social p {
-  font-size: 20px;
-  line-height: 27px;
-  margin-top: 0;
+  img {
+    margin-top: 12px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 41px;
+    margin-top: 115px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 0;
+  }
 }
 
 footer {
   margin-top: 59px;
   margin-bottom: 106px;
+  p {
+    font-size: 20px;
+    line-height: 42px;
+    color: #34251f;
+  }
 }
-
-footer p {
-  font-size: 20px;
-  line-height: 42px;
-  color: #34251f;
-}
-
 @media (max-width: 768px) {
   footer {
     margin-top: 40px;
     margin-bottom: 40px;
-  }
-  footer p {
-    text-align: center;
-    font-size: 14px;
-    line-height: 24px;
+    p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 }
-/*# sourceMappingURL=index.css.map */

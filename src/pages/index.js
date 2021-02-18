@@ -4,7 +4,7 @@ export default function Home() {
     <>
       <Head>
         <title>good mirrors aren't cheap</title>
-        <link rel="stylesheet" href="https://goodmirrors.s3.amazonaws.com/index.css"/>
+
         <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Orienta&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/ >
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
