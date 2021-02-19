@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
       <Criteria />
       <Deadline />
       <Social />
-      <Footer />
+      {/* <Footer /> */}
       <Component {...pageProps} />
     </ThemeProvider>
   );

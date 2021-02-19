@@ -239,6 +239,7 @@ Criteria Styles
     line-height: 30px;
     max-width: 500px;
     margin: auto;
+    margin-bottom: 30px;
     list-style: none;
   }
   .criteria__art {
@@ -261,6 +262,10 @@ Deadline Styles
 
 .deadline h3 {
   font-size: 40px;
+}
+
+.deadline a {
+  color: #fff !important;
 }
 
 @media (max-width: 768px) {
@@ -303,28 +308,5 @@ Social Styles
   font-size: 20px;
   line-height: 27px;
   margin-top: 0;
-}
-
-footer {
-  margin-top: 59px;
-  margin-bottom: 106px;
-}
-
-footer p {
-  font-size: 20px;
-  line-height: 42px;
-  color: #34251f;
-}
-
-@media (max-width: 768px) {
-  footer {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  footer p {
-    text-align: center;
-    font-size: 14px;
-    line-height: 24px;
-  }
 }
 /*# sourceMappingURL=index.css.map */
