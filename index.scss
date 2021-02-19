@@ -227,6 +227,7 @@ Criteria Styles
       line-height: 30px;
       max-width: 500px;
       margin: auto;
+      margin-bottom: 30px;
       list-style: none;
     }
   }
@@ -247,6 +248,9 @@ Deadline Styles
   padding: 65px 20px;
   h3 {
     font-size: 40px;
+  }
+  a {
+    color: #fff !important;
   }
 }
 @media (max-width: 768px) {
@@ -287,23 +291,23 @@ Social Styles
   }
 }
 
-footer {
-  margin-top: 59px;
-  margin-bottom: 106px;
-  p {
-    font-size: 20px;
-    line-height: 42px;
-    color: #34251f;
-  }
-}
-@media (max-width: 768px) {
-  footer {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    p {
-      text-align: center;
-      font-size: 14px;
-      line-height: 24px;
-    }
-  }
-}
+// footer {
+//   margin-top: 59px;
+//   margin-bottom: 106px;
+//   p {
+//     font-size: 20px;
+//     line-height: 42px;
+//     color: #34251f;
+//   }
+// }
+// @media (max-width: 768px) {
+//   footer {
+//     margin-top: 40px;
+//     margin-bottom: 40px;
+//     p {
+//       text-align: center;
+//       font-size: 14px;
+//       line-height: 24px;
+//     }
+//   }
+// }
