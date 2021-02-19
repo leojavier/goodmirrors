@@ -5,7 +5,7 @@ const Social = () => (
             <h3>Follow us.</h3>
             <section>
                 <h2>GOOD MIRRORS</h2>
-                <p>@goodmirrorsarentcheap</p>
+                <p><a href="https://www.instagram.com/goodmirrorsarentcheap/?hl=en" target='blank'>@goodmirrorsarentcheap</a></p>
             </section>
             <div className="row">
                 <div className="col-lg-3 col-sm-6 col-xs-12">
@@ -24,7 +24,7 @@ const Social = () => (
 
             <section>
                 <h2>SheaMoisture</h2>
-                <p>@SheaMoisture</p>
+                <p><a href="https://www.instagram.com/sheamoisture/?hl=en" target="blank">@SheaMoisture</a></p>
             </section>
             <div className="row">
                 <div className="col-lg-3 col-sm-6 col-xs-12">

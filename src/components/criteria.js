@@ -18,10 +18,7 @@ const Criteria = () => (
 
     <div className="row align-items-center">
         <div className="col-12">
-            <ul>
-                <li>• Must be a creative who is the process of building influence as a creator.</li><br/>
-                <li>• Must showcase a portfolio of work that is rooted in uplifting your community.</li>
-            </ul>
+            
         </div>
     </div>
 
@@ -30,8 +27,10 @@ const Criteria = () => (
         
         </div>
         <div className="col-lg-6 col-sm-12">
-        <ul><li>• Have an existing platform with examples of community work (digital presence, community awards, partnerships programs, website or social media ).
-            </li></ul>
+        <p>• Must be a creative who is the process of building influence as a creator.</p>
+            <p>• Must showcase a portfolio of work that is rooted in uplifting your community.</p>
+        <p>• Have an existing platform with examples of community work (digital presence, community awards, partnerships programs, website or social media).
+            </p>
             <a className='button' href="https://form.jotform.com/210458198232052" target="blank">Apply Now!</a>
         </div>
         <div className="col-lg-3 col-sm-12">
