@@ -5,6 +5,7 @@ import Opportunity from "../components/opportunity";
 import Criteria from "../components/criteria";
 import Deadline from "../components/deadline";
 import Social from "../components/social";
+import Link from 'next/link'
 import Footer from "../components/footer";
 import { ThemeProvider } from "../components/providers";
 import '../public/index.css'
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
+    <Link href='/test'>
     <ThemeProvider>
       <Header />
       <Banner />
@@ -27,6 +29,7 @@ function MyApp({ Component, pageProps }) {
       {/* <Footer /> */}
       <Component {...pageProps} />
     </ThemeProvider>
+    </Link>
   );
 }
 
